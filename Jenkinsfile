@@ -14,5 +14,10 @@ pipeline {
         sh 'mvn test'
       }
     }
+    stage('Deliver') {
+      steps {
+        sh 'cp target/myapp.jar ~'
+      }
+    }
   }
 }  
