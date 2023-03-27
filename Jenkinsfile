@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Deliver') {
       steps {
-        sh 'cp target/myapp.jar ~'
+        sh 'cp target/nomorepatience-1.0-SNAPSHOT.jar  ~'
       }
     }
   }
